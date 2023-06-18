@@ -1,0 +1,78 @@
+#root {
+  padding-top: 150px;
+  color: yellowgreen;
+  font-size: 20px;
+  position: relative;
+}
+
+.password {
+  display: inline;
+  color: red;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+body {
+  background-color: rgb(25, 25, 25);
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title,
+.time {
+  text-align: center;
+  color: orange;
+}
+
+.time {
+  font-size: 55px;
+}
+
+.panel {
+  display: flex;
+  margin-top: 100px;
+  justify-content: center;
+  gap: 40px;
+}
+
+.block-list {
+  position: absolute;
+  top: -200%;
+  left: 50px;
+  background-color: rgba(255, 68, 0, 0.251);
+  padding: 15px;
+  border-radius: 25px;
+  min-height: 500px;
+}
+
+.block-list.show {
+  top: 20%;
+  transition: all 3s ease;
+}
+
+.list__item {
+  margin-bottom: 20px;
+  margin-left: 32%;
+}
+
+.btn {
+  width: 150px;
+  height: 50px;
+  background-color: blueviolet;
+  color: burlywood;
+  border-color: transparent;
+  border-radius: 15px;
+}
+
+.btn:not([disabled]):hover {
+  cursor: pointer;
+  background-color: brown;
+  font-size: 25px;
+  height: 60px;
+  transition: all 0.5s ease-in;
+}
